@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Marck+Script&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap'); */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+    background-color: #313638;
+    overflow-x: hidden;
+}
+
+.jumbotron {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url("../images/BG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: scroll;
+}
+
+.jumbotron .overlay {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron h1 {
+    display: inline-block;
+    margin: 0 40px;
+    letter-spacing: 3px;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.797);
+    font-family: 'PT Serif', serif;
+}
+
+.jumbotron svg.logo {
+    width: 180px;
+    height: auto;
+    fill: white;
+}
+
+.jumbotron .top-right {
+    float: right;
+    padding: 0 30px 0 0;
+    margin: 0;
+}
+
+.jumbotron .non-mobile-view a {
+    color: rgba(255, 255, 255, 0.797);
+    font-family: 'PT Serif', serif;
+    padding: 0 20px;
+    font-size: 14px;
+    margin: 0;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.jumbotron .non-mobile-view a:nth-child(2) {
+    border-left: 2px solid rgba(255, 255, 255, 0.697);
+}
+
+.jumbotron .non-mobile-view a:hover {
+    color: rgba(255, 255, 255, 0.95);
+    transition: 0.6s;
+}
+
+.jumbotron .text {
+    width: 100%;
+    height: calc(100% - 40px - 110px);
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.jumbotron .text > div {
+    display: inline;
+}
+
+.jumbotron .text .coming-soon {
+    width: auto;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 70px;
+    text-align: left;
+    padding-left: 25px;
+    margin-top: -60px;
+    margin-bottom: 17px;
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Kaushan Script', cursive; */
+    /* font-family: 'Marck Script', cursive; */
+    /* font-family: 'Rancho', cursive; */
+    /* font-family: 'Yesteryear', cursive; */
+    /* font-family: 'Courgette', cursive; */
+    /* font-family: 'Cookie', cursive; */
+    /* font-family: 'Tangerine', cursive; */
+}
+
+.jumbotron .text .quote {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-size: 16px;
+    padding-left: 30px;
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: 32px;
+    font-family: 'PT Serif', serif;
+}
+
+.social-media-icons {
+    width: 100vw;
+    height: 110px;
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+    padding: 0px 40px 30px;
+}
+
+.jumbotron .mobile-view a, .social-media-icons a {
+    width: 55px;
+    height: 55px;
+    color: rgba(255, 255, 255, 0.884);
+    margin: 12px;
+    border-radius: 30%;
+    font-size: 20px;
+    float: left;
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color:rgba(255, 255, 255, 0.205);
+    transition: 0.6s;
+}
+
+.jumbotron .mobile-view a {
+    width: 43px;
+    height: 43px;
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+.jumbotron .mobile-view a:hover, .social-media-icons a:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.674);
+    transform: rotate(90deg);
+    transition: 0.6s;
+}
+
+.jumbotron .mobile-view a i, .social-media-icons a i {
+    transition: 0.6s;
+}
+
+.jumbotron .mobile-view a:hover i, .social-media-icons a:hover i {
+    transform: rotate(-90deg);
+    transition: transform 0.6s;
+}
+
+.non-mobile-view {
+    display: block;
+}
+
+.mobile-view {
+    display: none;
+}
+
+
+/* Custom, iPhone Retina */ 
+@media (max-width : 320px) {
+    .jumbotron .overlay {
+        padding-top: 30px;
+    }
+
+    .jumbotron h1 {
+        margin: 6px 0px 0 17px;
+        font-size: 19px;
+    }
+
+    .jumbotron svg.logo {
+        width: 100px;
+    }
+
+    .jumbotron .text {
+        height: calc(100% - 40px - 80px);
+        padding-left: 30px;
+    }
+    
+    .jumbotron .text .coming-soon {
+        font-size: 43px;
+        padding-left: 0px;
+        margin-bottom: 5px;
+    }
+
+    .jumbotron .text .quote {
+        font-size: 12px;
+        padding-left: 0px;
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .social-media-icons {
+        height: 80px;
+        padding: 0 20px 10px;
+    }
+
+    .jumbotron .mobile-view {
+        padding-right: 16px;
+    }
+
+    .jumbotron .mobile-view a {
+        width: 40px;
+        height: 40px;
+        font-size: 13px;
+        margin: 0 7px;
+    }
+
+    .social-media-icons a {
+        width: 43px;
+        height: 43px;
+        margin: 6px;
+        font-size: 17px;
+    }
+
+    .non-mobile-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+
+}
+
+@media (min-width: 321px) and (max-width: 479px) {
+    .jumbotron .overlay {
+        padding-top: 30px;
+    }
+
+    .jumbotron h1 {
+        margin: 7px 0px 0 17px;
+        font-size: 20px;
+    }
+
+    .jumbotron svg.logo {
+        width: 100px;
+    }
+    
+    .jumbotron .text {
+        height: calc(100% - 40px - 80px);
+        padding-left: 30px;
+    }
+    
+    .jumbotron .text .coming-soon {
+        font-size: 45px;
+        padding-left: 0px;
+        margin-bottom: 5px;
+    }
+
+    .jumbotron .text .quote {
+        font-size: 12px;
+        padding-left: 0px;
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .social-media-icons {
+        height: 80px;
+        padding: 0 20px 10px;
+    }
+
+    .jumbotron .mobile-view {
+        padding-right: 16px;
+    }
+
+    .jumbotron .mobile-view a {
+        width: 40px;
+        height: 40px;
+        font-size: 13px;
+        margin: 0 7px;
+    }
+
+    .social-media-icons a {
+        width: 43px;
+        height: 43px;
+        margin: 6px;
+        font-size: 17px;
+    }
+
+    .non-mobile-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media (min-width: 480px) and (max-width: 599px) {
+    .jumbotron .overlay {
+        padding-top: 35px;
+    }
+
+    .jumbotron h1 {
+        margin: 0 35px;
+        font-size: 21px;
+    }
+
+    .jumbotron svg.logo {
+        width: 150px;
+    }
+    
+    .jumbotron .text {
+        height: calc(100% - 40px - 80px);
+        padding-left: 35px;
+    }
+    
+    .jumbotron .text .coming-soon {
+        font-size: 53px;
+        padding-left: 0px;
+        margin-bottom: 5px;
+    }
+
+    .jumbotron .text .quote {
+        font-size: 13px;
+        padding-left: 0px;
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .social-media-icons {
+        height: 80px;
+        padding: 0 20px 10px;
+    }
+
+    .jumbotron .mobile-view {
+        padding-right: 19px;
+    }
+
+    .jumbotron .mobile-view a {
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
+        margin: 0 9px;
+    }
+
+    .social-media-icons a {
+        width: 45px;
+        height: 45px;
+        margin: 7px;
+        font-size: 18px;
+    }
+
+    .non-mobile-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+}
+
+/* Small Devices, Tablets */
+@media (min-width: 600px) and (max-width: 767px) {
+    .jumbotron .overlay {
+        padding-top: 35px;
+    }
+
+    .jumbotron h1 {
+        margin: 0 35px;
+        font-size: 23px;
+    }
+
+    .jumbotron svg.logo {
+        width: 155px;
+    }
+    
+    .jumbotron .text {
+        height: calc(100% - 40px - 85px);
+        padding-left: 40px;
+    }
+    
+    .jumbotron .text .coming-soon {
+        font-size: 54px;
+        padding-left: 0px;
+        margin-bottom: 7px;
+    }
+
+    .jumbotron .text .quote {
+        font-size: 13px;
+        padding-left: 0px;
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .social-media-icons {
+        height: 85px;
+        padding: 0 20px 10px;
+    }
+
+    .jumbotron .mobile-view {
+        padding-right: 19px;
+    }
+
+    .social-media-icons a {
+        width: 47px;
+        height: 47px;
+        margin: 9px;
+        font-size: 19px;
+    }
+    
+    .non-mobile-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+    .jumbotron .overlay {
+        padding-top: 37px;
+    }
+
+    .jumbotron h1 {
+        margin: 0 37px;
+        font-size: 24px;
+    }
+
+    .jumbotron svg.logo {
+        width: 160px;
+    }
+    
+    .jumbotron .text {
+        height: calc(100% - 40px - 90px);
+        padding-left: 30px;
+    }
+
+    .jumbotron .text {
+        padding-left: 40px;
+    }
+    
+    .jumbotron .text .coming-soon {
+        font-size: 57px;
+        padding-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    .jumbotron .text .quote {
+        font-size: 14px;
+        padding-left: 0px;
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .social-media-icons {
+        height: 90px;
+        padding: 0 20px 10px;
+    }
+
+    .social-media-icons a {
+        width: 47px;
+        height: 47px;
+        margin: 9px;
+        font-size: 19px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media (min-width: 900px) and (max-width: 1023px) {
+    .jumbotron .overlay {
+        padding-top: 37px;
+    }
+
+    .jumbotron h1 {
+        margin: 0 37px;
+        font-size: 24px;
+    }
+
+    .jumbotron svg.logo {
+        width: 165px;
+    }
+    
+    .jumbotron .text {
+        height: calc(100% - 40px - 90px);
+        padding-left: 40px;
+    }
+    
+    .jumbotron .text .coming-soon {
+        font-size: 61px;
+        padding-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    .jumbotron .text .quote {
+        font-size: 15px;
+        padding-left: 0px;
+        text-align: left;
+        line-height: 29px;
+    }
+
+    .social-media-icons {
+        height: 90px;
+        padding: 0 20px 10px;
+    }
+
+    .social-media-icons a {
+        width: 47px;
+        height: 47px;
+        margin: 9px;
+        font-size: 19px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .jumbotron .overlay {
+        padding-top: 40px;
+    }
+
+    .jumbotron h1 {
+        margin: 0 40px;
+        font-size: 26px;
+    }
+
+    .jumbotron svg.logo {
+        width: 170px;
+    }
+    
+    .jumbotron .text {
+        height: calc(100% - 110px - 40px);
+        padding-left: 40px;
+    }
+    
+    .jumbotron .text .coming-soon {
+        font-size: 70px;
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    .jumbotron .text .quote {
+        font-size: 15px;
+        padding-left: 15px;
+        text-align: left;
+        line-height: 31px;
+    }
+
+    .social-media-icons {
+        height: 110px;
+        padding: 0 30px 20px;
+    }
+
+    .social-media-icons a {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width : 1200px){
+
+}

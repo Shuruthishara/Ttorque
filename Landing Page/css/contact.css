@@ -1,0 +1,451 @@
+.jumbotron {
+    background-image: url("../images/BG\ 5.jpg") ;
+    background-position: center;
+}
+
+.topic_1 {
+    width: 100%;
+    height: 1000px;
+    padding: 70px 90px;
+}
+
+.topic_1 h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.topic_1 .form {
+    height: 680px;
+}
+
+.topic_1 .img {
+    height: 680px;
+    padding: 50px;
+}
+
+.topic_1 .img div {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/BG\ 11.jpg");
+    background-position: left;
+}
+
+div.form {
+    padding: 50px 70px;
+}
+
+form {
+    width: 100%;
+}
+
+form div {
+    width: 100%;
+    margin: 2em 0;
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    width: 100%;
+    height: 5em;
+    background: transparent;
+    outline: none;
+    border: 1.45px solid black;
+    font-size: 16px;
+    text-align: center;
+    transition: .5s;
+}
+
+.form-control:hover, .form-control:focus {
+    transition: .5s;
+    border: 1.45px solid #970C10;
+    background-color: rgb(255, 235, 235);
+    box-shadow: 0px 15px 35px -12px rgba(0, 0, 0, 0.25);
+}
+
+.input {
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+textarea {
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+    overflow: hidden;
+    resize: none;
+}
+
+.submit {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: auto;
+    border: none;
+    background-color: rgb(10, 10, 10);
+    padding: 17px 22px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.submit:hover {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: scale(1.045);
+    -webkit-transform: scale(1.05);
+    transform-origin: 50% 0;
+    transition: 0.5s;
+}
+
+
+/* Custom, iPhone Retina */ 
+@media (max-width : 320px) {
+    .topic_1 {
+        height: 890px;
+        padding: 20px 10px;
+    }
+    
+    .topic_1 h1 {
+        font-size: 1.5em;
+        margin-bottom: 0px;
+    }
+    
+    .topic_1 .form {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .topic_1 .img {
+        height: 300px;
+        padding: 10px;
+    }
+    
+    .topic_1 .img div {
+        background-position: right;
+    }
+    
+    div.form {
+        padding: 20px 15px;
+    }
+    
+    form div {
+        margin: 2em 0;
+    }
+    
+    .form-control {
+        height: 4em;
+        font-size: 13px;
+    }
+    
+    textarea {
+        padding: 1em;
+    }
+    
+    .submit {
+        padding: 12px 22px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 479px) {
+    .topic_1 {
+        height: 890px;
+        padding: 20px 15px;
+    }
+    
+    .topic_1 h1 {
+        font-size: 1.5em;
+        margin-bottom: 0px;
+    }
+    
+    .topic_1 .form {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .topic_1 .img {
+        height: 300px;
+        padding: 15px;
+    }
+    
+    .topic_1 .img div {
+        background-position: right;
+    }
+    
+    div.form {
+        padding: 20px 20px;
+    }
+    
+    form div {
+        margin: 2em 0;
+    }
+    
+    .form-control {
+        height: 4.2em;
+        font-size: 13px;
+    }
+    
+    textarea {
+        padding: 1em;
+    }
+    
+    .submit {
+        padding: 12px 22px;
+        font-size: 13px;
+    }    
+}
+
+/* Extra Small Devices, Phones */ 
+@media (min-width: 480px) and (max-width: 599px) {
+    .topic_1 {
+        height: 1010px;
+        padding: 30px 25px;
+    }
+    
+    .topic_1 h1 {
+        font-size: 1.5em;
+        margin-bottom: 0px;
+    }
+    
+    .topic_1 .form {
+        height: auto;
+        margin-bottom: 25px;
+    }
+    
+    .topic_1 .img {
+        height: 380px;
+        padding: 25px;
+    }
+    
+    .topic_1 .img div {
+        background-position: right;
+    }
+    
+    div.form {
+        padding: 20px 20px;
+    }
+    
+    form div {
+        margin: 2em 0;
+    }
+    
+    .form-control {
+        height: 4.2em;
+        font-size: 14px;
+    }
+    
+    textarea {
+        padding: 1em;
+    }
+    
+    .submit {
+        padding: 12px 22px;
+        font-size: 14px;
+    }    
+    
+}
+
+/* Small Devices, Tablets */
+@media (min-width: 600px) and (max-width: 767px) {
+    .topic_1 {
+        height: 1010px;
+        padding: 30px 65px;
+    }
+    
+    .topic_1 h1 {
+        font-size: 1.6em;
+        margin-bottom: 0px;
+    }
+    
+    .topic_1 .form {
+        height: auto;
+        margin-bottom: 25px;
+    }
+    
+    .topic_1 .img {
+        height: 380px;
+        padding: 25px;
+    }
+    
+    .topic_1 .img div {
+        background-position: right;
+    }
+    
+    div.form {
+        padding: 20px 20px;
+    }
+    
+    form div {
+        margin: 2em 0;
+    }
+    
+    .form-control {
+        height: 4.4em;
+        font-size: 14px;
+    }
+    
+    textarea {
+        padding: 1em;
+    }
+    
+    .submit {
+        padding: 12px 22px;
+        font-size: 14px;
+    }    
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+    .topic_1 {
+        height: 680px;
+        padding: 30px 35px;
+    }
+    
+    .topic_1 h1 {
+        font-size: 1.7em;
+        margin-bottom: 40px;
+    }
+    
+    .topic_1 .form {
+        height: 500px;
+        margin-bottom: 25px;
+    }
+    
+    .topic_1 .img {
+        height: 500px;
+        padding: 35px 25px;
+    }
+    
+    .topic_1 .img div {
+        background-position: left;
+    }
+    
+    div.form {
+        padding: 20px 20px;
+    }
+    
+    form div {
+        margin: 2em 0;
+    }
+    
+    .form-control {
+        height: 4.3em;
+        font-size: 14px;
+    }
+    
+    textarea {
+        padding: 1em;
+    }
+    
+    .submit {
+        padding: 12px 22px;
+        font-size: 14px;
+    }    
+}
+
+/* Medium Devices, Desktops */
+@media (min-width: 900px) and (max-width: 1023px) {
+    .topic_1 {
+        height: 730px;
+        padding: 30px 35px;
+    }
+    
+    .topic_1 h1 {
+        font-size: 1.9em;
+        margin-bottom: 40px;
+    }
+    
+    .topic_1 .form {
+        height: 530px;
+        margin-bottom: 25px;
+    }
+    
+    .topic_1 .img {
+        height: 530px;
+        padding: 35px 25px;
+    }
+    
+    .topic_1 .img div {
+        background-position: left;
+    }
+    
+    div.form {
+        padding: 20px 20px;
+    }
+    
+    form div {
+        margin: 2em 0;
+    }
+    
+    .form-control {
+        height: 4.5em;
+        font-size: 15px;
+    }
+    
+    textarea {
+        padding: 1em;
+    }
+    
+    .submit {
+        padding: 12px 22px;
+        font-size: 15px;
+    }    
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .topic_1 {
+        height: 790px;
+        padding: 30px 55px;
+    }
+    
+    .topic_1 h1 {
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+    
+    .topic_1 .form {
+        height: 550px;
+        margin-bottom: 25px;
+    }
+    
+    .topic_1 .img {
+        height: 550px;
+        padding: 35px 45px;
+    }
+    
+    .topic_1 .img div {
+        background-position: left;
+    }
+    
+    div.form {
+        padding: 20px 40px;
+    }
+    
+    form div {
+        margin: 2em 0;
+    }
+    
+    .form-control {
+        height: 4.7em;
+        font-size: 15px;
+    }
+    
+    textarea {
+        padding: 1em;
+    }
+    
+    .submit {
+        padding: 12px 22px;
+        font-size: 15px;
+    }  
+}
+
+@media (min-width : 1200px){
+
+}
